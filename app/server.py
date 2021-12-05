@@ -6,8 +6,9 @@ import uvicorn, aiohttp, asyncio
 from io import BytesIO
 from fastai2.vision.all import *
 
-model_file_url = 'https://github.com/psmathur/pets_breeds_classifier/blob/master/pets_res_34_export.pkl?raw=true'
-model_file_name = 'export.pkl'
+model_file_url = 'https://github.com/NeaamHariri/FashionAI/blob/fd439f28763fdcedfcdcaf023859cc4de70f4501/trained_model.pkl?raw=true'
+model_file_name = 'trained_model..pkl'
+classes = ['Blouse', 'Blazer', 'Button-Down', 'Bomber', 'Anorak', 'Tee', 'Tank', 'Top', 'Sweater', 'Flannel', 'Hoodie', 'Cardigan', 'Jacket', 'Henley', 'Poncho', 'Jersey', 'Turtleneck', 'Parka', 'Peacoat', 'Halter', 'Skirt', 'Shorts', 'Jeans', 'Joggers', 'Sweatpants', 'Jeggings', 'Cutoffs', 'Sweatshorts', 'Leggings', 'Culottes', 'Chinos', 'Trunks', 'Sarong', 'Gauchos', 'Jodhpurs', 'Capris', 'Dress', 'Romper', 'Coat', 'Kimono', 'Jumpsuit', 'Robe', 'Caftan', 'Kaftan', 'Coverup', 'Onesie']
 path = Path(__file__).parent
 
 app = Starlette()
