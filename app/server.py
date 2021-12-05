@@ -4,7 +4,7 @@ from starlette.staticfiles import StaticFiles
 from starlette.middleware.cors import CORSMiddleware
 import uvicorn, aiohttp, asyncio
 from io import BytesIO
-from fastai.vision.all import *
+from fastai2.vision.all import *
 
 model_file_url = 'https://github.com/NeaamHariri/FashionAI/blob/fd439f28763fdcedfcdcaf023859cc4de70f4501/trained_model.pkl?raw=true'
 model_file_name = 'trained_model..pkl'
